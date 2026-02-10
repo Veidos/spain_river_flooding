@@ -1,0 +1,10 @@
+project:
+  name: "project_name"
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  reports: "reports"
+
+run:
+  random_seed: 42
