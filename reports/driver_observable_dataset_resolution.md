@@ -1,19 +1,19 @@
 # Driver → Observable → Dataset → Resolution (v0)
 
-| Driver/mecanismo | Observable (definición medible) | Dataset candidato | Resolución (espacio/tiempo) |
+| Driver / mechanism | Observable (measurable definition) | Candidate dataset | Resolution (space/time) |
 | --- | --- | --- | --- |
-| Precipitación reciente | Acumulado 1h/3h/6h; intensidad máxima 1h | SAIH (pluviómetros si existen en el ámbito) | Puntual; 5–15 min a 1h |
-| Precipitación reciente | Acumulado 24h/72h | SAIH; reanálisis (si falta cobertura) | Puntual / grilla; horario–diario |
-| Humedad antecedente (proxy) | Acumulado 7d/14d de precipitación | SAIH / reanálisis | Puntual / grilla; diario |
-| Humedad del suelo | % saturación/índice humedad suelo (top-layer) | Copernicus/ERA5-Land (si se incorpora) | Grilla; horario–diario |
-| Estado del río (respuesta) | Caudal instantáneo; caudal medio 1h | SAIH-ROEA (series de caudal/nivel en puntos) | Puntual; 5–15 min a 1h |
-| Estado del río (respuesta) | Nivel (m) y tendencia | SAIH (puntos de control) | Puntual; 5–15 min |
-| Deshielo (si aplica) | Temperatura > 0°C + SWE decreciente | Reanálisis/nieve (si aplica a cuenca) | Grilla; diario |
-| Operación de embalses | Cambio de volumen; caudal de salida | SAIH (presas/obras hidráulicas principales si están instrumentadas) | Puntual; 5–60 min |
-| Capacidad del cauce (proxy) | Relación nivel–caudal; cambios por tramo | SAIH (nivel+caudal) + metadatos estación | Puntual; histórico |
-| Confluencias/propagación | Lag entre picos en estaciones aguas arriba/abajo | SAIH (series multiestación) | Red; 5–60 min |
-| Urbanización (amplificación) | % impermeable aguas arriba (proxy) | HRL Imperviousness / SIOSE (si se incorpora) | Polígono/grilla; anual |
-| Uso del suelo | % agrícola/forestal, cambios | CORINE/SIOSE (si se incorpora) | Polígono; multi-año |
-| Topografía | Pendiente media cuenca; TWI (proxy) | DEM (IGN o equivalente) | Grilla; estática |
-| Geología/suelos | Grupo hidrológico; infiltración (proxy) | Mapas edafológicos (si se incorpora) | Polígono; estática |
-| Exposición económica (si se incluye) | Activos/uso del suelo en llanura de inundación | Catastro/land use + mapas peligrosidad (si se incorporan) | Parcela/polígono; multi-año |
+| Recent precipitation | 1h/3h/6h accumulation; 1h maximum intensity | SAIH (rain gauges, if available in scope) | Point; 5–15 min to 1h |
+| Recent precipitation | 24h/72h accumulation | SAIH; reanalysis (if coverage is incomplete) | Point / grid; hourly–daily |
+| Antecedent wetness (proxy) | 7d/14d accumulated precipitation | SAIH / reanalysis | Point / grid; daily |
+| Soil moisture | % saturation / soil moisture index (top layer) | Copernicus / ERA5-Land (if included) | Grid; hourly–daily |
+| River state (response) | Instantaneous discharge; 1h mean discharge | SAIH-ROEA (discharge/stage time series at selected points) | Point; 5–15 min to 1h |
+| River state (response) | Stage (m) and trend | SAIH (control points) | Point; 5–15 min |
+| Snowmelt (if applicable) | Air temperature > 0°C + decreasing SWE | Reanalysis / snow products (if applicable to basin) | Grid; daily |
+| Reservoir operations | Storage change; outflow discharge | SAIH (dams / major hydraulic works, if instrumented) | Point; 5–60 min |
+| Channel capacity (proxy) | Stage–discharge relationship; changes over time by reach | SAIH (stage + discharge) + station metadata | Point; historical |
+| Confluences / flood wave propagation | Lag between peaks at upstream vs downstream stations | SAIH (multi-station time series) | Network; 5–60 min |
+| Urbanization (amplification) | Upstream impervious surface fraction (proxy) | HRL Imperviousness / SIOSE (if included) | Polygon / grid; annual |
+| Land use | Agricultural/forest fraction; changes | CORINE / SIOSE (if included) | Polygon; multi-year |
+| Topography | Mean catchment slope; TWI (proxy) | DEM (IGN or equivalent) | Grid; static |
+| Geology / soils | Hydrologic soil group; infiltration capacity (proxy) | Soil / geology maps (if included) | Polygon; static |
+| Economic exposure (if included) | Assets / land use in the floodplain | Cadastre / land-use + hazard maps (if included) | Parcel / polygon; multi-year |
