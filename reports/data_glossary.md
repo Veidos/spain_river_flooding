@@ -3,13 +3,16 @@
 ## Core Concepts
 
 ### River (río) vs Canal
+
 - **River**: Natural watercourse. Measures natural flow.
 - **Canal**: Artificial channel. Measures managed/diverted flow.
 
 ### Reservoir (embalse)
+
 Dam that stores river water. Affects downstream flow (releases controlled).
 
 ### Instantaneous vs Daily
+
 - **Daily (AFLIQ)**: Average of the full day.
 - **Instantaneous (AFLIQI)**: Peak value at exact moment. Critical for extreme events.
 
