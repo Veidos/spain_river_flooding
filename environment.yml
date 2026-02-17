@@ -1,6 +1,12 @@
 name: spain-river-flooding
 channels:
-  - conda-forge
   - defaults
 dependencies:
   - python=3.11
+  - ipykernel
+  - matplotlib
+  - numpy
+  - openpyxl
+  - pandas
+  - seaborn
+prefix: C:\Users\migue\anaconda3\envs\spain-river-flooding
